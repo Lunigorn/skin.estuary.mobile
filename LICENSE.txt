@@ -1,3 +1,5 @@
+Estuary Mobile fork by Lunigon (Igor Lunin)
+
 Estuary by phil65 (Team Kodi)
 
 Estuary Artwork is licensed under a
