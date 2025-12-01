@@ -55,7 +55,7 @@
 			<left>0</left>
 			<top></top>
 			<width>450</width>
-			<height>65</height>
+			<height>100</height>
 			<align>center</align>
 			<texturefocus colordiffuse="button_focus">lists/focus.png</texturefocus>
 			<texturenofocus />

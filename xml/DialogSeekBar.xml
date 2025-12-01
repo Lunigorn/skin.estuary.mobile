@@ -13,11 +13,11 @@
 			<visible>Player.ShowInfo | Window.IsActive(fullscreeninfo) | Player.ShowTime | Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(playerprocessinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrchannelguide) | ![!String.IsEmpty(Player.SeekNumeric) | Player.Seeking | Player.HasPerformedSeek(3) | Player.Forwarding | Player.Rewinding | Player.Paused] | !String.IsEmpty(PVR.ChannelNumberInput)</visible>
 			<visible>!Player.HasGame</visible>
 			<bottom>0</bottom>
-			<height>306</height>
+			<height>346</height>
 			<control type="image">
 				<left>-40</left>
 				<width>120%</width>
-				<height>200</height>
+				<height>356</height>
 				<texture flipy="true">frame/osdfade.png</texture>
 			</control>
 			<control type="group">
@@ -155,29 +155,33 @@
 					</control>
 				</control>
 			</control>
-			<control type="label">
-				<centerleft>50%</centerleft>
-				<centertop>215</centertop>
-				<width>50%</width>
-				<height>60</height>
-				<align>center</align>
-				<aligny>top</aligny>
-				<label>$VAR[SeekTimeLabelVar]</label>
-				<font>font45</font>
-				<shadowcolor>black</shadowcolor>
-				<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
-			</control>
-			<control type="label" id="40000">
-				<centerleft>50%</centerleft>
-				<centertop>265</centertop>
-				<width>50%</width>
-				<height>50</height>
-				<align>center</align>
-				<aligny>top</aligny>
-				<label>$VAR[SeekLabel]</label>
-				<font>font13</font>
-				<shadowcolor>black</shadowcolor>
-			</control>
+			<control type="group">
+				<centertop>0</centertop>
+				<description>seek info</description>
+				<control type="label">
+					<centerleft>50%</centerleft>
+					<centertop>0</centertop>
+					<width>50%</width>
+					<height>60</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<label>$VAR[SeekTimeLabelVar]</label>
+					<font>font45</font>
+					<shadowcolor>black</shadowcolor>
+					<visible>!Player.ChannelPreviewActive | VideoPlayer.HasEpg</visible>
+				</control>
+				<control type="label" id="40000">
+					<centerleft>50%</centerleft>
+					<centertop>50</centertop>
+					<width>50%</width>
+					<height>50</height>
+					<align>center</align>
+					<aligny>top</aligny>
+					<label>$VAR[SeekLabel]</label>
+					<font>font13</font>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>			
 			<control type="group">
 				<visible>VideoPlayer.Content(LiveTV)</visible>
 				<control type="group">
@@ -219,10 +223,12 @@
 				</control>
 			</control>
 			<control type="group">
+				<description>progress line</description>
+				<top>110</top>
 				<visible>!VideoPlayer.Content(LiveTV)</visible>
 				<control type="progress">
 					<left>0</left>
-					<top>70</top>
+					<top>0</top>
 					<width>100%</width>
 					<height>32</height>
 					<info>Player.ProgressCache</info>
@@ -231,7 +237,7 @@
 				</control>
 				<control type="progress">
 					<left>0</left>
-					<top>70</top>
+					<top>0</top>
 					<width>100%</width>
 					<height>32</height>
 					<info>Player.Progress</info>
@@ -240,7 +246,7 @@
 				</control>
 				<control type="slider" id="401">
 					<left>0</left>
-					<top>60</top>
+					<top>-10</top>
 					<width>100%</width>
 					<height>52</height>
 					<texturesliderbar colordiffuse="00FFFFFF">osd/progress/nub_bar.png</texturesliderbar>
