@@ -25,8 +25,9 @@ Estuary Mobile is a compact, touch-friendly fork of the default Estuary skin for
 **Changelog**
 - v0.1.0 — Initial mobile release
 	- Increased button and control sizes for touch devices.
-	- Enlarged video progress bar for easier finger scrubbing.
+	- Enlarged video progress bar.
 	- Added +10s and -10s on-screen seek buttons for video playback.
+	- Increased height of context menus buttons.
 
 **Contributing**
 - Issues and pull requests are welcome. For larger UI changes, open an issue first to discuss intended behaviour and testing on devices.
