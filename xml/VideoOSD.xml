@@ -245,7 +245,7 @@
 				</control>
 			</control>
 			<control type="group" id="6000">
-				<top>100</top>
+				<top>50</top>
 				<animation type="WindowOpen" condition="!Window.IsVisible(fullscreeninfo)" reversible="False">
 					<effect type="fade" start="0" end="100" time="300"/>
 					<effect type="slide" start="0,200" end="0,0" time="300" tween="cubic" easing="out" />
@@ -270,7 +270,7 @@
 					<onright condition="Player.Paused">PlayerControl(FrameAdvance(1))</onright>
 				</control>
 				<control type="slider">
-					<top>-50</top>
+					<top>0</top>
 					<left>0</left>
 					<width>100%</width>
 					<height>52</height>
@@ -284,7 +284,7 @@
 					<visible>!Control.HasFocus(87) + !VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="slider">
-					<top>-50</top>
+					<top>0</top>
 					<left>0</left>
 					<width>100%</width>
 					<height>52</height>
@@ -298,7 +298,7 @@
 					<visible>Control.HasFocus(87) + !VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="slider">
-					<top>-50</top>
+					<top>0</top>
 					<left>0</left>
 					<width>100%</width>
 					<height>52</height>
@@ -312,7 +312,7 @@
 					<visible>!Control.HasFocus(87) + VideoPlayer.Content(LiveTV)</visible>
 				</control>
 				<control type="slider">
-					<top>-50</top>
+					<top>0</top>
 					<left>0</left>
 					<width>100%</width>
 					<height>52</height>
